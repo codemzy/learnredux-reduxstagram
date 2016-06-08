@@ -18,12 +18,11 @@ export function addComment(postId, author, comment) {
 }
 
 // remove comment
-export function removeComment(postId, commentId) {
-    console.log('removing a comment');
+export function removeComment(postId, index) {
     return {
         type: 'REMOVE_COMMENT',
         postId,
-        commentId
+        index
     }
 }
 
