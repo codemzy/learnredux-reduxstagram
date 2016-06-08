@@ -21,6 +21,8 @@ const Comments = React.createClass({
         const author = this.refs.author.value;
         const comment = this.refs.comment.value;
         this.props.addComment(postId, author, comment);
+        // clear the form after submit
+        this.refs.commentForm.reset();
     },
     
     render() {
